@@ -1,0 +1,13 @@
+.hidden {
+    display: none;
+}
+#greeting,
+#login-form {
+    margin: 200px 0;
+    text-align: center;
+}
+
+#login-form:first-child input {
+    margin-right: 20px;
+    padding: 5px 5px;
+}

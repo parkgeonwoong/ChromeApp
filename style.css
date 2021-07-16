@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+input,
+body {
+    color: #2e363e;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .hidden {
     display: none;
 }
+
 #greeting,
 #login-form {
     margin: 200px 0;

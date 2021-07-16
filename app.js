@@ -23,8 +23,15 @@ function onLoginSubmit(event) {
     localStorage.setItem(USERNAME_KEY, username);     // value에 유저이름 저장하기 --> localStorage (API)
 
     // greeting.innerText = "Hello " + username;
-    greeting.innerText = `Hello ${username}`;       // h1 greeting에 텍스트를 넣어줌
-    greeting.classList.remove(HIDDEN_CLASSNAME);    // h1에서 hidden class 삭제
+    // greeting.innerText = `Hello ${username}`;       // h1 greeting에 텍스트를 넣어줌
+    // greeting.classList.remove(HIDDEN_CLASSNAME);    // h1에서 hidden class 삭제
+    paintGreetings(username);
+}
+
+// greeting 중복 사용으로 함수화
+function paintGreetings(username) {
+    greeting.innerText = `Hello ${username}`
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
 
@@ -34,10 +41,9 @@ const savedUsername = localStorage.getItem(USERNAME_KEY)
 if(savedUsername === null) {
     // show the form
     loginForm.classList.remove(HIDDEN_CLASSNAME);
-    loginForm.addEventListener("submit", onLoginSubmit);
+    loginForm.addEventListener("submit", onLoginSubmit);        // 이벤트리스너에 의해 onLoginSubmit 함수 호출
 } else {
     // show the greeting
-    greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.innerText = `Hello ${savedUsername}`
+    paintGreetings(savedUsername);
 
 }

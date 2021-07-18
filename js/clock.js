@@ -1,4 +1,4 @@
-const clock = document.querySelector("h2#clock");
+const clock = document.querySelector("h2.clock");
 
 function getClock() {
     const date = new Date()     // 날짜를 나타내는 new Date()

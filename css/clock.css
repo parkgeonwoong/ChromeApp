@@ -1,6 +1,8 @@
-#clock {
-    margin: 50px 0px;
+.clock {
+    position: relative;
+    /* margin: 50px 0px; */
     text-align: center;
     font-size: 50px;
     font-weight: 600;
+    z-index: 2;
 }

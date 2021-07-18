@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "./reset.css";
+@import "./animaition.css";
+@import "./clock.css";
+
 
 input,
 body {
@@ -12,11 +16,18 @@ body {
 
 #greeting,
 #login-form {
-    margin: 200px 0;
+    margin: 20px 0;
     text-align: center;
 }
 
-#login-form:first-child input {
-    margin-right: 20px;
+#greeting {
+    font-size: 40px;
+    font-weight: 600;
+    animation: tracking-in-expand 1s ease-in-out;
+}
+
+#login-form input {
+    margin-right: 10px;
     padding: 5px 5px;
+    border-radius: 10px;
 }

@@ -10,21 +10,33 @@
 </head>
 
 <body>
-    <h2 class="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?" />
-        <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <div class="quote">
-        <span></span>
-        <span></span>
-    </div>
+    <main>
+        <!-- Clock -->
+        <h2 class="clock">00:00:00</h2>
+        <!-- login -->
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="What is your name?" />
+            <input type="submit" value="Log In" />
+        </form>
+        <!-- gretting -->
+        <h1 id="greeting" class="hidden"></h1>
+        <!-- Todo -->
+        <form id="todo-form">
+            <input type="text" placeholder="Write a Todo and Press Enter" required/>
+        </form>
+        <ul id="todo-list"></ul>
+        <!-- quotes -->
+        <div class="quote">
+            <span></span>
+            <span></span>
+        </div>
 
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
+        <script src="js/greeting.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+    </main>
 </body>
 
 </html>

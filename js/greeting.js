@@ -5,9 +5,9 @@
 
 
 // 1. html에서 가져오는 방법2
-const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#login-form input");
-const greeting = document.querySelector("#greeting");
+const loginForm = document.querySelector(".login-form");
+const loginInput = document.querySelector(".login-form input");
+const greeting = document.querySelector(".greeting");
 
 // 변수 중복 고정
 const HIDDEN_CLASSNAME = "hidden";

@@ -6,42 +6,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mometum App</title>
+    <title>Momentum App</title>
 </head>
 
 <body>
-    <main>
+    
+    <div class="center">
         <!-- Clock -->
         <h2 class="clock">00:00:00</h2>
         <!-- login -->
-        <form id="login-form" class="hidden">
+        <form class="login-form hidden">
             <input required maxlength="15" type="text" placeholder="What is your name?" />
-            <input type="submit" value="Log In" />
+            <input type="submit" value="" />
         </form>
         <!-- gretting -->
-        <h1 id="greeting" class="hidden"></h1>
-        <!-- Todo -->
-        <form id="todo-form">
-            <input type="text" placeholder="Write a Todo and Press Enter" required/>
-        </form>
-        <ul id="todo-list"></ul>
-        <!-- quotes -->
-        <div class="quote">
-            <span></span>
-            <span></span>
+        <h1 class="greeting hidden"></h1>
+    </div>
+    
+    <!-- weather -->
+    <div class="weather">
+        <span></span>
+        <span></span>
+    </div>  
+    <!-- Todo -->
+    <div class="to-do">
+        <div class="to-do_menu">
+            <button class="to-do_button">
+                <i class="fas fa-list-ul fa-lg"></i>
+            </button>
+            <form class="todo-form">
+                <input type="text" placeholder="Write a Todo" required/>
+            </form>
         </div>
-        <!-- weather -->
-        <div id="weather">
-            <span></span>
-            <span></span>
+        <div class="to-do_ul">
+            <ul class="todo-list"></ul>
         </div>
-        <script src="js/greeting.js"></script>
+    </div>
+    <!-- quotes -->
+    <div class="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/greeting.js"></script>
         <script src="js/clock.js"></script>
         <script src="js/quotes.js"></script>
         <script src="js/background.js"></script>
         <script src="js/todo.js"></script>
         <script src="js/weather.js"></script>
-    </main>
+        <script
+        src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>

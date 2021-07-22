@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@import "./center.css";
 @import "./reset.css";
 @import "./animaition.css";
 @import "./clock.css";
 @import "./quotes.css";
+@import "./weather.css";
+@import "./todo.css";
 
-/* html {
-    width: 100%;
+
+html,
+body {
     height: 100%;
-} */
+    width: 100%;
+}
 
 input,
 body {
@@ -15,40 +21,44 @@ body {
     font-family: 'East Sea Dokdo', 'Open Sans', sans-serif;
 }
 
-/* main {
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+    flex-direction: column;
+    color: white;
+    animation: fadeIn_time 1s ease-in-out;
+}
 
 .hidden {
     display: none;
 }
 
-#greeting,
-#login-form {
-    position: relative;
-    margin: 20px 0;
-    text-align: center;
-    z-index: 2;
+input::placeholder {
+    color: white;
+    opacity: 0.8;
 }
 
-#greeting {
-    font-size: 40px;
-    font-weight: 600;
-    animation: tracking-in-expand 1s ease-in-out;
-}
-
-#login-form input {
-    margin-right: 10px;
-    padding: 5px 5px;
-    border-radius: 10px;
-}
-
-.backgr {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    z-index: 1;
+@media screen and (max-width: 550px) {
+    .clock {
+        font-size: 50px;
+    }
+    .login-form input {
+        font-size: 15px;
+    }
+    .login-form input:first-child {
+        padding-left: 50px;
+    }
+    .quote {
+        opacity: 0;
+    }
+    .todo-form input {
+        font-size: 12px;
+    }
+    .to-do_ul li {
+        font-size: 10px;
+    }
+    .weather {
+        font-size: 10px;
+    }
 }

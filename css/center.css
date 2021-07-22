@@ -1,0 +1,30 @@
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.greeting,
+.login-form {
+    position: relative;
+    z-index: 2;
+    font-size: 36px;
+    margin: 20px 0px;
+}
+
+.greeting{
+    animation: tracking-in-expand 1s ease-in-out;
+}
+
+.login-form input {
+    appearance: none;
+    background: none;
+    border: none;
+    font-size: 36px;
+    color: white;
+    animation: fadeIn_time 2s ease-in-out;
+}
+
+.login-form input:first-child {
+    padding-left: 150px;
+}

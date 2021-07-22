@@ -7,10 +7,11 @@ function onGeoOK(position) {
     fetch(url)
         .then((response) => response.json()) //promise는 당장 일어나지 않고 시간이 걸린다. ==> 해결 then 
         .then((data) => {
-            const weather = document.querySelector("#weather span:first-child")
-            const city = document.querySelector("#weather span:last-child")
+            const weather = document.querySelector(".weather span:last-child")
+            const city = document.querySelector(".weather span:first-child")
             city.innerText = data.name
-            weather.innerText = `${data.weather[0].main} / ${data.main.temp}`
+            weather.innerText = ` ${data.main.temp} ℃`
+            // ${data.weather[0].main} /
         })
 }
 

@@ -1,6 +1,7 @@
-const toDoForm = document.getElementById("todo-form")
-const toDoList = document.querySelector("#todo-list")
-const toDoInput = toDoForm.querySelector("input")
+const toDoForm = document.querySelector(".todo-form")
+const toDoList = document.querySelector(".todo-list")
+const toDoInput = document.querySelector(".todo-form input")
+const toDoButton = document.querySelector(".to-do_button");
 
 const TODOS_KEY = "todos";
 
@@ -75,3 +76,9 @@ if(savedToDos !== null) {
 // const newarr = arr.filter(item => item > 2)
 // console.log(arr)
 // console.log(newarr)
+
+function handleToDoButton(event) {
+    toDoList.classList.toggle("hidden")
+}
+
+toDoButton.addEventListener("click", handleToDoButton)

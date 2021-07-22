@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-@import "./center.css";
-@import "./reset.css";
-@import "./animaition.css";
-@import "./clock.css";
-@import "./quotes.css";
-@import "./weather.css";
-@import "./todo.css";
+@import "center.css";
+@import "reset.css";
+@import "animaition.css";
+@import "clock.css";
+@import "quotes.css";
+@import "weather.css";
+@import "todo.css";
 
 
 html,

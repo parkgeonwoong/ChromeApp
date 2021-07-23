@@ -23,16 +23,24 @@
   <strong>• IDE</strong>&nbsp&nbsp&nbsp
 <img src="http://img.shields.io/badge/Visual Studio Code-007ACC?style&logo=Visual Studio Code&logoColor=white"/></a> &nbsp
 </p>
+
+<p>
+  <strong>• Service</strong>&nbsp&nbsp&nbsp
+<img src="http://img.shields.io/badge/Docker-2496ED?style&logo=Docker&logoColor=white"/></a> &nbsp
+<img src="http://img.shields.io/badge/NGINX-009639?style&logo=NGINX&logoColor=white"/></a> &nbsp
+<img src="http://img.shields.io/badge/PowerShell-5391FE?style&logo=PowerShell&logoColor=white"/></a> &nbsp
+<img src="http://img.shields.io/badge/Ubuntu-E95420?style&logo=Ubuntu&logoColor=white"/></a> &nbsp
+</p>
 <br />
 
 ## ✅ Installation
 - [Download Visual Studio Code](https://code.visualstudio.com/download)  
 - Free and built on open source. Integrated Git, debugging and extensions.   
-<br />
+
 
 ## ✅ Gallery 
 - <strong> 👉[Here](https://parkgeonwoong.github.io/ChromeApp/) <strong>
-<br />
+
 
 ## ✅ Development Environment
 - VSCode 
@@ -42,6 +50,18 @@
 - Img ---> [Unsplash](https://unsplash.com/)
 <br />
 
+### 🔸Features   
+   
+- [x] Clock
+- [x] To Do List
+- [x] Weather
+- [x] Daily Quote
+- [x] Daily Photo
+- [x] Offline Support
+
+<br />
+   
+   
 ### 🔸Stack
 ```markdown
 - Advanced CSS (animation @mediaQuery etc..)
@@ -66,6 +86,23 @@
   - setInterval()
   - appendChild() / prepend()
 ```
+<br />
+   
+## ✅ Docker Image
+   - Docker
+  - [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)  
+    
+    > Linux
+    > 
+    > The 3.10.x kernel is the minimum requirement for Docker.
+  - [Window](https://docs.docker.com/docker-for-windows/install/)
+  
+    > Windows 10
+    > 
+    > Hyper-V must be enabled in BIOS VT-D must also be enabled if available (Intel Processors)  
+    
+  - DockerHub Repository Public Create
+<br />
 
-
+[Command.sh](https://github.com/parkgeonwoong/ChromeApp/blob/main/command.sh) 참고
 

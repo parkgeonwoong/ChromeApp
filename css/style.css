@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 @import "center.css";
 @import "reset.css";
@@ -8,57 +8,56 @@
 @import "weather.css";
 @import "todo.css";
 
-
 html,
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 input,
 body {
-    color: #2e363e;
-    font-family: 'East Sea Dokdo', 'Open Sans', sans-serif;
+  color: #2e363e;
+  font-family: "East Sea Dokdo", "Open Sans", sans-serif;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    animation: fadeIn_time 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  /* animation: fadeIn_time 1s ease-in-out; */
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 input::placeholder {
-    color: white;
-    opacity: 0.8;
+  color: white;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 550px) {
-    .clock {
-        font-size: 50px;
-    }
-    .login-form input {
-        font-size: 15px;
-    }
-    .login-form input:first-child {
-        padding-left: 50px;
-    }
-    .quote {
-        opacity: 0;
-    }
-    .todo-form input {
-        font-size: 12px;
-    }
-    .to-do_ul li {
-        font-size: 10px;
-    }
-    .weather {
-        font-size: 10px;
-    }
+  .clock {
+    font-size: 50px;
+  }
+  .login-form input {
+    font-size: 15px;
+  }
+  .login-form input:first-child {
+    padding-left: 50px;
+  }
+  .quote {
+    opacity: 0;
+  }
+  .todo-form input {
+    font-size: 12px;
+  }
+  .to-do_ul li {
+    font-size: 10px;
+  }
+  .weather {
+    font-size: 10px;
+  }
 }
